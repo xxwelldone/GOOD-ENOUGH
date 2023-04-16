@@ -15,6 +15,7 @@
   margin: 0 auto; /* Centralise content even in bigger screen*/
 }
 .header img {
+  margin-top: 10px;
   justify-content: left;
 }
 
@@ -25,12 +26,12 @@
 }
 .header-menu a {
   color: var(--cor-5);
-  padding-left: 20px;
-  /*display: inline-block;*/
+  margin-left: 20px;
+  display: inline;
 }
 .header-menu a:hover {
   background-color: var(--cor-p2);
-  padding: 8px;
+  padding: 8px 10px 8px 10px;
   color: var(--cor-1);
   border-radius: 4px;
   transition: 1.2s;
