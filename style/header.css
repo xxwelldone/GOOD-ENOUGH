@@ -25,6 +25,7 @@
 }
 .header-menu a {
   color: var(--cor-5);
+  padding-left: 20px;
   /*display: inline-block;*/
 }
 .header-menu a:hover {
