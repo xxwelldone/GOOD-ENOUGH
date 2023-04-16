@@ -1,0 +1,14 @@
+.intro-bg {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+  margin: 0px auto; /* Centralise content even in bigger screen*/
+  max-width: 1200px;
+}
+.intro-conteiner {
+  padding: 200px;
+}
+.intro-conteiner h1 {
+  color: var(--cor-2);
+  font-weight: 200;
+}
