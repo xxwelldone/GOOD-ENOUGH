@@ -1,0 +1,36 @@
+.header-bg {
+  background-color: var(--cor-12);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap; /* It allows flex to break into a new line
+    if necessary*/
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box; /* It takes padding into account when we set max-width*/
+  max-width: 1200px;
+  margin: 0 auto; /* Centralise content even in bigger screen*/
+}
+.header img {
+  justify-content: left;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header-menu a {
+  color: var(--cor-5);
+  /*display: inline-block;*/
+}
+.header-menu a:hover {
+  background-color: var(--cor-p2);
+  padding: 8px;
+  color: var(--cor-1);
+  border-radius: 4px;
+  transition: 1.2s;
+}
