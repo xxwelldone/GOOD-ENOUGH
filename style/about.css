@@ -1,0 +1,38 @@
+.about-bg {
+  display: flex;
+  justify-content: start;
+  background-color: black;
+  margin: 0px auto; /* Centralise content even in bigger screen*/
+  max-width: 1200px;
+}
+.about-conteiner {
+  padding: 50px;
+}
+.about-conteiner h1 {
+  margin-top: 100px;
+  color: var(--cor-2);
+  font-weight: 200;
+}
+.about-conteiner p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor-2);
+  max-width: 70ch;
+
+  font-weight: 200;
+}
+/*.member-bg {
+  display: flex;
+  justify-content: start;
+  background-color: black;
+}*/
+.members-conteiner {
+  display: grid;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 0px auto;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 50px;
+}
+a > .members {
+  min-width: 200px;
+}

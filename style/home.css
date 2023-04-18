@@ -12,3 +12,6 @@
   color: var(--cor-2);
   font-weight: 200;
 }
+li > a {
+  color: aliceblue;
+}
