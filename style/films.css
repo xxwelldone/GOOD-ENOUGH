@@ -5,6 +5,7 @@
   margin: 0px auto; /* Centralise content even in bigger screen*/
   max-width: 1200px;
 }
+
 .films-conteiner {
   padding: 50px;
 }
@@ -13,7 +14,34 @@
   color: var(--cor-2);
   font-weight: 200;
 }
-#movie {
+#movies {
+  display: grid;
+  max-width: 1100px;
+
+  margin: 0px auto;
+  margin-top: 100px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 50px;
+}
+.paragraph {
+  color: var(--cor-4);
+}
+.titulo {
+  color: var(--cor-2);
+}
+/* .movie {
   padding: 45px 400px;
   color: var(--cor-1);
+} */
+.titulo {
+  padding-bottom: 10px;
 }
+
+/* .titulo::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--cor-p3);
+  margin-right: 10px;
+} */

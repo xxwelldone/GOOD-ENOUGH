@@ -1,10 +1,10 @@
 const api = fetch(
   "https://api.themoviedb.org/3/movie/top_rated?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=pt-BR&page=1"
 );
-const conteudo = document.querySelectorAll("#movie h3");
-const imagens = document.querySelectorAll("#movie .Image");
+const conteudo = document.querySelectorAll("#movies h3");
+const imagens = document.querySelectorAll("#movies .Image");
 const paragraph = document.querySelectorAll(".paragraph");
-console.log(imagens);
+
 //console.log(conteudo);
 api
   .then((response) => response.json())
@@ -20,6 +20,7 @@ api
         "https://image.tmdb.org/t/p/w500" + data.results[i].poster_path
       );*/
     }
+    console.log("test: " + data.results[2].overview);
 
     //conteudo.innerText = data.results[0].original_title;
   });
