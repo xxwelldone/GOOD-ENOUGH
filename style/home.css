@@ -1,7 +1,7 @@
 .intro-bg {
   display: flex;
   justify-content: end;
-  background-color: black;
+  background-color: var(--cor-12);
   margin: 0px auto; /* Centralise content even in bigger screen*/
   max-width: 1200px;
 }
@@ -13,5 +13,5 @@
   font-weight: 200;
 }
 li > a {
-  color: aliceblue;
+  color: var(--cor-3);
 }
