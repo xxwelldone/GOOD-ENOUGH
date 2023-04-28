@@ -23,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  align-items: center;
 }
 .header-menu a {
   color: var(--cor-5);
@@ -35,4 +36,11 @@
   color: var(--cor-1);
   border-radius: 4px;
   transition: 1.2s;
+}
+.search {
+  padding: 5px;
+  height: 20px;
+  width: 200px;
+  border-radius: 8px;
+  outline-color: var(--cor-p2);
 }

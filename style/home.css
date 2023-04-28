@@ -15,3 +15,19 @@
 li > a {
   color: var(--cor-3);
 }
+#movieIndex {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 90px;
+}
+.score {
+  color: var(--cor-6);
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: larger;
+}
+.thumb {
+  rotate: 180deg;
+  color: antiquewhite;
+}
