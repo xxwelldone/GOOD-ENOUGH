@@ -22,25 +22,37 @@
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  /* gap: 20px; */
   align-items: center;
 }
 .header-menu a {
   color: var(--cor-5);
+  margin-top: 20px;
   margin-left: 20px;
   display: inline;
 }
 .header-menu a:hover {
   background-color: var(--cor-p2);
-  padding: 8px 10px 8px 10px;
-  color: var(--cor-1);
+  padding: 10px 2px;
+  box-sizing: border-box;
+  border-color: 2px solid var(--cor-p3);
   border-radius: 4px;
   transition: 1.2s;
+  color: var(--cor-1);
 }
 .search {
   padding: 5px;
-  height: 20px;
+  height: 30px;
+
   width: 200px;
-  border-radius: 8px;
+  background-color: var(--cor-1);
   outline-color: var(--cor-p2);
+
+  border: none;
+}
+.btn {
+  background-color: var(--cor-1);
+  padding: 7px;
+  outline-color: var(--cor-p2);
+  border: none;
 }

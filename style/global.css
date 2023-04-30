@@ -29,7 +29,8 @@ h3,
 h4 p,
 ul,
 blockquote,
-dd {
+dd,
+input {
   margin: 0px;
 }
 ul {
@@ -43,4 +44,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+input {
+  box-sizing: border-box;
 }
