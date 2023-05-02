@@ -22,22 +22,28 @@
 .header-menu {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 20px; */
   align-items: center;
 }
-.header-menu a {
+.list-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.list-menu a {
   color: var(--cor-5);
   margin-top: 20px;
   margin-left: 20px;
   display: inline;
 }
-.header-menu a:hover {
-  background-color: var(--cor-p2);
+.list-menu a:hover {
+  background-color: var(--cor-10);
   padding: 10px 2px;
   box-sizing: border-box;
   border-color: 2px solid var(--cor-p3);
   border-radius: 4px;
   transition: 1.2s;
+  margin-top: 16px;
+  margin-left: 16px;
   color: var(--cor-1);
 }
 .search {

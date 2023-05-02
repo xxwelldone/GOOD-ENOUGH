@@ -48,3 +48,7 @@ img {
 input {
   box-sizing: border-box;
 }
+form {
+  display: flex;
+  margin-bottom: 0px;
+}
