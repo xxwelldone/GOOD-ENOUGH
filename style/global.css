@@ -52,3 +52,7 @@ form {
   display: flex;
   margin-bottom: 0px;
 }
+object {
+  width: 200px;
+  height: 30px;
+}
