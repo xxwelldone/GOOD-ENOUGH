@@ -1,0 +1,33 @@
+.intro-bg {
+  display: flex;
+  justify-content: end;
+  background-color: var(--cor-12);
+  margin: 0px auto; /* Centralise content even in bigger screen*/
+  max-width: 1200px;
+}
+.intro-conteiner {
+  padding: 200px;
+}
+.intro-conteiner h1 {
+  color: var(--cor-2);
+  font-weight: 200;
+}
+li > a {
+  color: var(--cor-3);
+}
+#movieIndex {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 90px;
+}
+.score {
+  color: var(--cor-6);
+  padding-top: 10px;
+  font-weight: 600;
+  font-size: larger;
+}
+.thumb {
+  rotate: 180deg;
+  color: antiquewhite;
+}
