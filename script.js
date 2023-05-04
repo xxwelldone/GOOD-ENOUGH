@@ -10,8 +10,6 @@ const imagensHome = document.querySelectorAll("#movieIndex .Image");
 const score = document.querySelectorAll(".score");
 const thumb = document.querySelectorAll(".thumb");
 
-const search = document.querySelector(".search");
-
 /* API for Film List */
 api
   .then((response) => response.json())
@@ -62,15 +60,17 @@ apiHome
   });
 /* API for Seachr bar */
 
+const search = document.querySelector("#search");
+const dado = search.value;
+
+function handleChange(event) {
+  dado = event.target.value;
+}
+function handleEnter(event) {}
+search.addEventListener("change", handleChange);
+
 const pesquisa = fetch(
   "https://api.themoviedb.org/3/search/movie?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=pt-BR&query=(" +
-    search +
+    dado +
     ")"
 );
-pesquisa
-  .then((response) => response.json())
-  .then((data) => {
-    for (let i = 0; i < data.length; i++) {
-      console.log(data.results[i].original_title);
-    }
-  });
