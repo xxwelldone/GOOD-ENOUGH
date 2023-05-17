@@ -30,7 +30,7 @@ api
 
 /*Get API Poster, title and Score/change color for home page */
 const apiHome = fetch(
-  "https://api.themoviedb.org/3/movie/popular?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=en-US&page=2"
+  "https://api.themoviedb.org/3/search/movie?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=pt-BR&query=(xuxa)"
 );
 //api.themoviedb.org/3/movie/popular?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=en-US&page=
 
@@ -59,18 +59,3 @@ apiHome
     }
   });
 /* API for Seachr bar */
-
-const search = document.querySelector("#search");
-const dado = search.value;
-
-function handleChange(event) {
-  dado = event.target.value;
-}
-function handleEnter(event) {}
-search.addEventListener("change", handleChange);
-
-const pesquisa = fetch(
-  "https://api.themoviedb.org/3/search/movie?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=pt-BR&query=(" +
-    dado +
-    ")"
-);
