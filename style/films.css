@@ -17,12 +17,12 @@
 #movies {
   display: grid;
   max-width: 1100px;
-
   margin: 0px auto;
   margin-top: 100px;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 300px);
   gap: 50px;
 }
+
 .paragraph {
   color: var(--cor-4);
 }
@@ -38,4 +38,21 @@
 }
 .Image:hover {
   opacity: calc(50%);
+}
+
+#films-container {
+  display: grid;
+  max-width: 1100px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px auto;
+  margin-top: 100px;
+
+  gap: 50px;
+}
+.paragraph-results {
+  color: var(--cor-4);
+  grid-column: 2;
+}
+.img-results {
+  grid-column: 1;
 }
