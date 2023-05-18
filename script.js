@@ -1,5 +1,5 @@
 const api = fetch(
-  "https://api.themoviedb.org/3/movie/upcoming?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=pt-BR&page=1"
+  "https://api.themoviedb.org/3/movie/upcoming?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=usa-EN&page=1"
 );
 const conteudo = document.querySelectorAll("#movies h3");
 const imagens = document.querySelectorAll("#movies .Image");
@@ -43,7 +43,7 @@ api
 
 /*Get API Poster, title and Score/change color for home page */
 const apiHome = fetch(
-  "https://api.themoviedb.org/3/search/movie?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=pt-BR&query=(xuxa)"
+  "https://api.themoviedb.org/3/search/movie?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=usa-EN&query=(xuxa)"
 );
 //api.themoviedb.org/3/movie/popular?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=en-US&page=
 

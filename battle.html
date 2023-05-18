@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,48 +12,49 @@
         <div class="header"><a href="/index.html"><img src="/imgs/GOOD ENOUGH.svg"></a>
             <nav class="header-menu">
 
-
-
-                <object type="text/html" data="/search.html"></object>
+                <form name="search" id="search">
+                    <input type="text" name="bar" placeholder="Search" id="bar"></input>
+                    <button type="submit" class=" btn fa fa-search"> </button>
+                </form>
                 <ul class="list-menu">
 
                     <li><a href="/battle.html" target="_blank">Battle</a></li>
+
                     <li><a href="/aboutus.html">About Us</a></li>
-                    <li><a href="/films.html">Film Lists</a></li>
+                    <li><a href="/films.html" target="_blank">Film Lists</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="intro-bg">
-        <div class="intro-conteiner">
-            <h1>See how good enough are these films</h1>
+    <main class="battle-bg">
+        <div class="battle-conteiner">
+            <h1>Battle Ground</h1>
+            <div id=battles>
 
-            <div id="movieIndex">
-                <div class="movie">
-                    <h3 class="titulo">Title 1</h3>
-                    <img src="" class="Image">
+                <div class="battle">
+                    <h3 class="battle-titulo">Title 1</h3>
+                    <img src="" class="battle-image">
+                    <p class="score">Score</p>
+                    <span style="font-size:24px" class="thumb fa">&#xf087;</span>
+                </div>
+                <div class="battle">
+
+                    <h3 class="battle-titulo">Title 2</h3>
+                    <img src="" class="battle-image">
                     <p class="score">Score</p>
                     <span style="font-size:24px" class="thumb fa">&#xf087;</span>
                 </div>
 
-                <div class="movie">
-                    <h3 class="titulo">Title 2</h3>
-                    <img src="" class="Image">
-                    <p class="score">Score</p>
-                    <span style="font-size:24px" class="thumb fa">&#xf087;</span>
-                </div>
 
-                <div class="movie">
-                    <h3 class="titulo">Title 3</h3>
-                    <img src="" class="Image">
-                    <p class="score">Score</p>
-                    <span style="font-size:24px" class="thumb fa">&#xf087;</span>
 
-                </div>
+
+
+
+
             </div>
-
     </main>
+
 </body>
-<script src=" /script.js"></script>
+<script src="/script.js"></script>
 
 </html>

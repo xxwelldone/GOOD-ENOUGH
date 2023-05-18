@@ -1,0 +1,25 @@
+.battle-bg {
+  display: block;
+
+  background-color: var(--cor-12);
+  margin: 0px auto; /* Centralise content even in bigger screen*/
+  max-width: 1200px;
+}
+.battle-conteiner {
+  padding: 50px;
+  color: var(--cor-4);
+}
+
+.battle-conteiner h1,
+h3 {
+  margin-top: 100px;
+  color: var(--cor-2);
+  font-weight: 200;
+}
+#battles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  gap: 400px;
+}
