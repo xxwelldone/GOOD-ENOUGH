@@ -12,10 +12,8 @@
         <div class="header"><a href="/"><img src="/imgs/GOOD ENOUGH.svg"></a>
             <nav class="header-menu">
 
-                <form name="search" id="search">
-                    <input type="text" name="bar" placeholder="Search" id="bar"></input>
-                    <button type="submit" class=" btn fa fa-search"> </button>
-                </form>
+                <input type="text" id="searchInput" class="bar" placeholder="Search">
+                <button id="searchButton" class=" btn fa fa-search"> </button>
                 <ul class="list-menu">
 
                     <li><a href="/battle.html" target="_blank">Battle</a></li>
@@ -27,6 +25,7 @@
         </div>
     </header>
     <main class="add-bg">
+        <div id="searchResults"></div>
         <div class="add-conteiner">
 
             <h1>Add Film</h1>
@@ -52,6 +51,6 @@
     </main>
 
 </body>
-<script src="/test.js"></script>
+<script src="/searchbar.js"></script>
 
 </html>
