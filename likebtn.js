@@ -33,7 +33,7 @@ banco
       }
     }
   });
-/* Like */
+/* Like and deslike */
 let clicked = localStorage.getItem("clicked") === "true";
 console.log(clicked);
 thumb1.addEventListener("click", () => {
@@ -62,31 +62,28 @@ thumb1.addEventListener("click", () => {
 });
 
 thumb2.addEventListener("click", () => {
-  fetch(
-    "https://api-a3-1obeusjbe-rickymarq.vercel.app/LikeMovie/646400bced96613fbcc0235a",
-    {
-      method: "PUT",
-    }
-  );
-});
-/*dislike */
-thumb1.addEventListener("active", () => {
-  fetch(
-    "https://api-a3-f00z0xaq4-rickymarq.vercel.app/DeslikeMovie/646400bced96613fbcc02357",
-    {
-      method: "PUT",
-    }
-  );
-  console.log("deslike");
-});
+  if (clicked === false) {
+    fetch(
+      "https://api-a3-1obeusjbe-rickymarq.vercel.app/LikeMovie/646400bced96613fbcc0235a",
+      {
+        method: "PUT",
+      }
+    );
+    localStorage.setItem("clicked", "true");
+    clicked = true;
+    console.log("feito: " + clicked);
+  } else {
+    fetch(
+      "https://api-a3-f00z0xaq4-rickymarq.vercel.app/DeslikeMovie/646400bced96613fbcc0235a",
+      {
+        method: "PUT",
+      }
+    );
+    localStorage.setItem("clicked", "false");
+    console.log("deslike: " + clicked);
 
-thumb2.addEventListener("active", () => {
-  fetch(
-    "https://api-a3-f00z0xaq4-rickymarq.vercel.app/DeslikeMovie/646400bced96613fbcc0235a",
-    {
-      method: "PUT",
-    }
-  );
+    // clicked = localStorage.getItem("clicked") = "false";
+  }
 });
 
 /*Form to Add */
@@ -130,26 +127,3 @@ document
         console.log("An error occurred:", error);
       });
   });
-
-// form.addEventListener("keypress", (e) => {
-//   //   const dado = e.target.value.replace(/\s/g, "");
-//   if (e.keyCode === 13) {
-//     const dado = e.target.value;
-//     console.log("test" + dado);
-
-//     const apiHome = fetch(
-//       "https://api.themoviedb.org/3/search/movie?api_key=d4f3a21a5ab99ecd653b548b11bcc686&language=pt-BR&query=(" +
-//         dado +
-//         ")"
-//     );
-//     apiHome
-//       .then((response) => response.json)
-//       .then((data) => {
-//         for (let i = 0; i < titulos.length; i++) {
-//           console.log(
-//             (titulos[i].textContent = data.results[i].original_title)
-//           );
-//         }
-//       });
-//   }
-// });

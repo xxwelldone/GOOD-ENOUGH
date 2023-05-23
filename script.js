@@ -66,4 +66,3 @@ apiHome
       }
     }
   });
-/* API for Like */
