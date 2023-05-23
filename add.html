@@ -30,15 +30,16 @@
         <div class="add-conteiner">
 
             <h1>Add Film</h1>
-            <form id="filmForm">
+            <hr>
+            <form id="filmForm" action="https://api-a3.vercel.app/AdicionarFilme" method="post">
                 <div class="form-group">
                     <label for="name">Film Name:</label>
                     <input class="addInput" type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="releaseYear">Release Year:</label>
-                    <input class="addInput" type="number" id="releaseYear" name="releaseYear" min="1900" max="2099"
-                        required>
+                    <label for="releaseYear">Released Year:</label>
+                    <input class="addInput" type="date" id="releaseYear" name="releaseYear" min="1960-01-01"
+                        max="2023-12-31" required>
                 </div>
                 <div class="form-group">
                     <label for="imageUrl">Image URL:</label>

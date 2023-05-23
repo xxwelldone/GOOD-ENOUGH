@@ -1,5 +1,5 @@
 .battle-bg {
-  display: block;
+  display: flex;
 
   background-color: var(--cor-12);
   margin: 0px auto; /* Centralise content even in bigger screen*/
@@ -16,10 +16,23 @@ h3 {
   color: var(--cor-2);
   font-weight: 200;
 }
+
 #battles {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   flex-direction: row;
-  gap: 400px;
+  flex-wrap: wrap;
+  gap: 300px;
+  margin-top: 100px;
+  align-items: center;
+}
+.battle-image {
+  width: 300px;
+  height: 450px;
+  object-fit: scale-down;
+}
+@media (max-width: 1020px) {
+  #battles {
+    gap: 10px;
+    flex-direction: column;
+  }
 }
