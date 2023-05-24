@@ -25,6 +25,7 @@ function handleSearch() {
 }
 
 // Function to display search results
+const results = document.querySelector("#results");
 function displayResults(data) {
   const searchResults = document.getElementById("searchResults");
   searchResults.innerHTML = ""; // Clear previous results
@@ -42,6 +43,7 @@ function displayResults(data) {
       poster.alt = result.title;
 
       const rate = document.createElement("p");
+      rate.className = "score";
 
       const thumb = document.createElement("span");
       thumb.style.fontSize = "24px";
@@ -77,7 +79,6 @@ function displayResults(data) {
       searchResults.appendChild(resultItem);
     });
   } else {
-    const results = document.querySelector("#results");
     results.innerText =
       "'" + searchTerm + "'" + " was not found. Try something like 'Xuxa'";
   }

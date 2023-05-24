@@ -37,12 +37,12 @@
   display: inline;
 }
 .list-menu a:hover {
-  background-color: var(--cor-10);
+  background-color: var(--cor-p2);
   padding: 10px 2px;
   box-sizing: border-box;
   border-color: 2px solid var(--cor-p3);
   border-radius: 4px;
-  transition: 1.2s;
+  transition: 0.2s ease-in, background-color 1s;
   margin-top: 16px;
   margin-left: 16px;
   color: var(--cor-1);
