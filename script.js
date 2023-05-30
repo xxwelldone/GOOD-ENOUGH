@@ -34,11 +34,6 @@ api
 
       paragraph[i].innerText = data.results[i].overview;
     }
-    // for (let i = 0; i < filmesHome.length; i++) {
-    //   filmesHome[i].innerText = data.results[i].original_title;
-    //   imagensHome[i].src =
-    //     "https://image.tmdb.org/t/p/w500" + data.results[i].poster_path;
-    // }
   });
 
 /*Get API Poster, title and Score/change color for home page */
@@ -56,12 +51,12 @@ apiHome
       filmesHome[i].innerText = data.results[i].original_title;
       imagensHome[i].src =
         "https://image.tmdb.org/t/p/w500" + data.results[i].poster_path;
-      if (data.results[i].vote_average > 6) {
+      if (data.results[i].vote_average > 6.0) {
         score[i].innerText = data.results[i].vote_average;
         score[i].style.color = "var(--cor-p1)";
         thumb[i].style.color = "var(--cor-p1)";
         thumb[i].style.rotate = "0deg";
-      } else if (data.results[i].vote_average <= 6) {
+      } else if (data.results[i].vote_average <= 6.0) {
         score[i].innerText = data.results[i].vote_average;
         score[i].style.color = "var(--cor-p3)";
         thumb[i].style.color = "var(--cor-p3)";
@@ -71,4 +66,3 @@ apiHome
       }
     }
   });
-/* API for Seachr bar */

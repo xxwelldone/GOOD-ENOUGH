@@ -1,0 +1,56 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Good Enough</title>
+</head>
+
+<body>
+    <header class="header-bg">
+        <div class="header"><a href="/"><img src="/imgs/GOOD ENOUGH.svg"></a>
+            <nav class="header-menu">
+
+                <input type="text" id="searchInput" class="bar" placeholder="Search">
+                <button id="searchButton" class=" btn fa fa-search"> </button>
+                <ul class="list-menu">
+
+                    <li><a href="/battle.html" target="_blank">Battle</a></li>
+                    <li><a href="/add.html">Add More</a></li>
+                    <li><a href="/aboutus.html">About Us</a></li>
+                    <li><a href="/films.html" target="_blank">Film Lists</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="add-bg">
+        <div id="searchResults"></div>
+        <div class="add-conteiner">
+
+            <h1>Add Film</h1>
+            <hr>
+            <form id="filmForm" action="https://api-a3.vercel.app/AdicionarFilme" method="post">
+                <div class="form-group">
+                    <label for="name">Film Name:</label>
+                    <input class="addInput" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="releaseYear">Released Year:</label>
+                    <input class="addInput" type="number" id="releaseYear" name="releaseYear" min="1960-01-01"
+                        max="2023-12-31" placeholder="yyyy" required>
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">Image URL:</label>
+                    <input class="addInput" type="url" id="imageUrl" name="imageUrl" placeholder="http://" required>
+                </div>
+                <button type="submit" class="addFilm">Add Film</button>
+            </form>
+
+        </div>
+    </main>
+
+</body>
+<script src="/searchbar.js"></script>
+
+</html>

@@ -1,0 +1,58 @@
+.add-bg {
+  display: block;
+
+  background-color: var(--cor-12);
+  margin: 0px auto; /* Centralise content even in bigger screen*/
+  max-width: 1200px;
+}
+.add-conteiner {
+  padding: 50px;
+  color: var(--cor-4);
+}
+.add-conteiner > h1 {
+  margin-top: 100px;
+  color: var(--cor-2);
+  font-weight: 200;
+}
+#filmForm {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.addInput {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  outline-color: var(--cor-p2);
+  border-radius: 2.5px;
+  margin-top: 10px;
+  border: none;
+}
+
+.addFilm[type="submit"] {
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: var(--cor-p2);
+  color: var(--cor-2);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block; /* Ensures the button takes the full width */
+  margin-top: 16px; /* Adds some spacing between the last input and the button */
+}
+
+.addFilm[type="submit"]:hover {
+  background-color: var(--cor-p1);
+}

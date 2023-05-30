@@ -12,15 +12,17 @@
 
 <body>
     <header class="header-bg">
-        <div class="header"><a href="/index.html"><img src="/imgs/GOOD ENOUGH.svg"></a>
+        <div class="header"><a href="/"><img src="/imgs/GOOD ENOUGH.svg"></a>
             <nav class="header-menu">
 
 
 
-                <object type="text/html" data="/search.html"></object>
+                <input type="text" id="searchInput" class="bar" placeholder="Search">
+                <button id="searchButton" class=" btn fa fa-search"> </button>
                 <ul class="list-menu">
 
                     <li><a href="/battle.html" target="_blank">Battle</a></li>
+                    <li><a href="/add.html">Add More</a></li>
                     <li><a href="/aboutus.html">About Us</a></li>
                     <li><a href="/films.html">Film Lists</a></li>
                 </ul>
@@ -29,7 +31,8 @@
     </header>
     <main class="intro-bg">
         <div class="intro-conteiner">
-            <h1>See how good enough are these films</h1>
+            <h1 id="results">See how good enough are these films</h1>
+            <div id="searchResults"></div>
 
             <div id="movieIndex">
                 <div class="movie">
@@ -58,5 +61,6 @@
     </main>
 </body>
 <script src=" /script.js"></script>
+<script src="/searchbar.js"></script>
 
 </html>

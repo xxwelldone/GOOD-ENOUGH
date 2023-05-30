@@ -31,3 +31,9 @@ li > a {
   rotate: 180deg;
   color: antiquewhite;
 }
+.result-item > img {
+  width: 40%;
+}
+.result-item h3 {
+  margin-bottom: 15px;
+}
