@@ -36,7 +36,7 @@ h3 {
     flex-direction: column;
   }
 }
-/* .battle > .thumb {
+/* .animation {
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
@@ -47,6 +47,5 @@ h3 {
   100% {
     transform: scale(1.3);
     transform: rotate(180deg);
-    color: var(--cor-p3);
   }
 } */

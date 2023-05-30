@@ -87,3 +87,48 @@ function displayResults(data) {
 // Attach click event listener to the search button
 const searchButton = document.getElementById("searchButton");
 searchButton.addEventListener("click", handleSearch);
+
+/* */
+let btn = document.getElementById("filmForm");
+
+btn.addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get the form input values
+  var name = document.getElementById("name").value;
+  var releaseYear = document.getElementById("releaseYear").value;
+  var imageUrl = document.getElementById("imageUrl").value;
+
+  // Create an object with the data
+  var filmData = {
+    name: name,
+    releaseYear: releaseYear,
+    imageUrl: imageUrl,
+  };
+
+  // Send the POST request to the API
+  fetch("https://api-a3.vercel.app/AdicionarFilme", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(filmData),
+  })
+    .then(function (response) {
+      // Handle the response from the API
+      if (response.ok) {
+        btn.innerText = "Film added successfully!";
+        btn.style.background = "var( --cor-p2)";
+        btn.style.color = "var(--cor-0)";
+        btn.classList.add = "thumb fa";
+
+        btn.style.padding = "50px";
+        console.log("Film added successfully!");
+      } else {
+        console.log("Failed to add film.");
+      }
+    })
+    .catch(function (error) {
+      console.log("Error:", error);
+    });
+});
