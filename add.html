@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +13,6 @@
         <div class="header"><a href="./"><img src="./imgs/GOOD ENOUGH.svg"></a>
             <nav class="header-menu">
 
-
-
                 <input type="text" id="searchInput" class="bar" placeholder="Search">
                 <button id="searchButton" class=" btn fa fa-search"> </button>
                 <ul class="list-menu">
@@ -25,44 +20,39 @@
                     <li><a href="./battle.html" target="_blank">Battle</a></li>
                     <li><a href="./add.html">Add More</a></li>
                     <li><a href="./aboutus.html">About Us</a></li>
-                    <li><a href="./films.html">Film Lists</a></li>
+                    <li><a href="./films.html" target="_blank">Film Lists</a></li>
                     <li><a href="./filmesapi.html"> More movies</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="intro-bg">
-        <div class="intro-conteiner">
-            <h1 id="results">See how good enough are these films</h1>
-            <div id="searchResults"></div>
+    <main class="add-bg">
+        <div id="searchResults"></div>
+        <div class="add-conteiner">
 
-            <div id="movieIndex">
-                <div class="movie">
-                    <h3 class="titulo">Title 1</h3>
-                    <img src="" class="Image">
-                    <p class="score">Score</p>
-                    <span style="font-size:24px" class="thumb fa">&#xf087;</span>
+            <h1>Add Film</h1>
+            <hr>
+            <form id="filmForm" action="https://api-a3.vercel.app/AdicionarFilme" method="post">
+                <div class="form-group">
+                    <label for="name">Film Name:</label>
+                    <input class="addInput" type="text" id="name" name="name" required>
                 </div>
-
-                <div class="movie">
-                    <h3 class="titulo">Title 2</h3>
-                    <img src="" class="Image">
-                    <p class="score">Score</p>
-                    <span style="font-size:24px" class="thumb fa">&#xf087;</span>
+                <div class="form-group">
+                    <label for="releaseYear">Released Year:</label>
+                    <input class="addInput" type="number" id="releaseYear" name="releaseYear" min="1960-01-01"
+                        max="2023-12-31" placeholder="yyyy" required>
                 </div>
-
-                <div class="movie">
-                    <h3 class="titulo">Title 3</h3>
-                    <img src="" class="Image">
-                    <p class="score">Score</p>
-                    <span style="font-size:24px" class="thumb fa">&#xf087;</span>
-
+                <div class="form-group">
+                    <label for="imageUrl">Image URL:</label>
+                    <input class="addInput" type="url" id="imageUrl" name="imageUrl" placeholder="http://" required>
                 </div>
-            </div>
+                <button type="submit" class="addFilm">Add Film</button>
+            </form>
 
+        </div>
     </main>
+
 </body>
-<script src=" ./script.js"></script>
 <script src="./searchbar.js"></script>
 
 </html>

@@ -1,6 +1,6 @@
 :root {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--cor-10);
+  background-color: var(--cor-12);
   --cor-0: #ffffff;
   --cor-1: #f7f7f7;
   --cor-2: #ededed;
@@ -29,7 +29,8 @@ h3,
 h4 p,
 ul,
 blockquote,
-dd {
+dd,
+input {
   margin: 0px;
 }
 ul {
@@ -43,4 +44,15 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+input {
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  margin-bottom: 0px;
+}
+object {
+  width: 200px;
+  height: 30px;
 }
