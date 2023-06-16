@@ -103,7 +103,7 @@ btn.addEventListener("submit", function (event) {
   var filmData = {
     name: name,
     releaseYear: releaseYear,
-    imageUrl: imageUrl,
+    urlImage: imageUrl,
   };
 
   // Send the POST request to the API
